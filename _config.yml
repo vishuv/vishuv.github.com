@@ -3,7 +3,7 @@ permalink:        pretty
 relative_permalinks: true
 
 # Setup
-title:            Vishu's Blog
+title:            Vishu's Pensieve
 tagline:          My Pensieve
 url:              http://vishu.me
 paginate:         1
