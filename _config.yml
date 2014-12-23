@@ -4,7 +4,7 @@ relative_permalinks: true
 
 # Setup
 title:            Vishu's Pensieve
-tagline:          My Pensieve
+tagline:          
 url:              http://vishu.me
 paginate:         1
 baseurl:          /
