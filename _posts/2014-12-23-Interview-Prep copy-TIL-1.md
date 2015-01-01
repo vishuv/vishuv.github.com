@@ -37,25 +37,25 @@ and so on.
 Following is the java code implementing the algorithm
 
 {% highlight java %}
-	public static ArrayList<String> permute(String input) {
-		ArrayList<String> permutations = new ArrayList<>();
-		_permute(permutations, "", input);
-		return permutations;
-	}
+public static ArrayList<String> permute(String input) {
+	ArrayList<String> permutations = new ArrayList<>();
+	_permute(permutations, "", input);
+	return permutations;
+}
 
-	private static void _permute(ArrayList<String> permutations, String prefix,
-			String str) {
-	  // prefix holds the part of the string that is chosen so far like AB in AB + permute(CD)
-		int n = str.length();
-		if (n == 0)
-			permutations.add(prefix);
-		else
-			for (int i = 0; i < n; i++) {
-				_permute(permutations, prefix + str.charAt(i),
-						str.substring(0, i) + str.substring(i + 1, n));
-			}
+private static void _permute(ArrayList<String> permutations, String prefix,
+		String str) {
+  // prefix holds the part of the string that is chosen so far like AB in AB + permute(CD)
+	int n = str.length();
+	if (n == 0)
+		permutations.add(prefix);
+	else
+		for (int i = 0; i < n; i++) {
+			_permute(permutations, prefix + str.charAt(i),
+					str.substring(0, i) + str.substring(i + 1, n));
+		}
 
-	}
+}
 
 {% endhighlight %}
 
