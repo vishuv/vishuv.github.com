@@ -13,7 +13,7 @@ Permuataion of an empty string is empty string
 Say our string is "ABCD"
 
 Permutations are
-```
+{% highlight %}
 A + permute(BCD)
 
 B + permute(ACD)
@@ -21,15 +21,17 @@ B + permute(ACD)
 C + permute(ABD)
 
 D + permute(ABC) 
-```
+{% endhighlight %}
+
 Similarly to permute(BCD)
-```
+{% highlight %}
 B + permute(CD)
 
 C + permute(BD)
 
 D + permute(BC)
-```
+{% endhighlight %}
+
 and so on.
 
 Following is the java code implementing the algorithm
