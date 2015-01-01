@@ -10,6 +10,7 @@ One of the things that amazed me is computing the [permutations of a string](htt
 Using recursion produces a succinct solution to this problem.
 The intution is that you pick a character from the string and permute the rest of the string.
 Permuataion of an empty string is empty string
+
 Say our string is "ABCD"
 
 Permutations are
