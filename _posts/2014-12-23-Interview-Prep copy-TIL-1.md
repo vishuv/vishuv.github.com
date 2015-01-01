@@ -43,8 +43,7 @@ public static ArrayList<String> permute(String input) {
 	return permutations;
 }
 
-private static void _permute(ArrayList<String> permutations, String prefix,
-		String str) {
+private static void _permute(ArrayList<String> permutations, String prefix, String str) {
   // prefix holds the part of the string that is chosen so far like AB in AB + permute(CD)
 	int n = str.length();
 	if (n == 0)
