@@ -58,6 +58,8 @@ html {
   }
 }
 
+pre { white-space: pre; overflow: auto; }
+
 body {
   color: #515151;
   background-color: #fff;
