@@ -1,0 +1,60 @@
+---
+layout: post
+title: Strings Part-1
+tags: Interview geeksforgeeks
+published: true
+---
+
+I have started working on string manipulation problems from [geeksforgeeks.com](http://www.geeksforgeeks.org/category/c-strings/). 
+One of the things that amazed me is computing the [permutations of a string](http://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/).
+Usin recursion produces a clean succint solution to this problem.
+The intution is that you pick a character from the string and permute the rest of the string.
+Permuataion of an empty string is empty string
+Say our string is "ABCD"
+
+Permutations are
+
+A + permute(BCD)
+
+B + permute(ACD)
+
+C + permute(ABD)
+
+D + permute(ABC) 
+
+Similarly to permute(BCD)
+
+B + permute(CD)
+
+C + permute(BD)
+
+D + permute(BC)
+
+and so on.
+
+Following is the java code implementing the algorithm
+
+{% highlight java linenos %}
+	public static ArrayList<String> permute(String input) {
+		ArrayList<String> permutations = new ArrayList<>();
+		_permute(permutations, "", input);
+		return permutations;
+	}
+
+	private static void _permute(ArrayList<String> permutations, String prefix,
+			String str) {
+	  // prefix holds the part of the string that is chosen so far like AB in AB + permute(CD)
+		int n = str.length();
+		if (n == 0)
+			permutations.add(prefix);
+		else
+			for (int i = 0; i < n; i++) {
+				_permute(permutations, prefix + str.charAt(i),
+						str.substring(0, i) + str.substring(i + 1, n));
+			}
+
+	}
+
+{% endhighlight %}
+
+The time complexity of this apporach is O(N * N!)
