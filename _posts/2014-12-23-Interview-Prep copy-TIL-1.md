@@ -13,7 +13,7 @@ Permuataion of an empty string is empty string
 Say our string is "ABCD"
 
 Permutations are
-{% highlight %}
+{% highlight java %}
 A + permute(BCD)
 
 B + permute(ACD)
@@ -24,7 +24,7 @@ D + permute(ABC)
 {% endhighlight %}
 
 Similarly to permute(BCD)
-{% highlight %}
+{% highlight java %}
 B + permute(CD)
 
 C + permute(BD)
