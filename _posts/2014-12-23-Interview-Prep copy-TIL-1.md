@@ -7,13 +7,13 @@ published: true
 
 I have started working on string manipulation problems from [geeksforgeeks.com](http://www.geeksforgeeks.org/category/c-strings/). 
 One of the things that amazed me is computing the [permutations of a string](http://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/).
-Usin recursion produces a clean succint solution to this problem.
+Using recursion produces a succinct solution to this problem.
 The intution is that you pick a character from the string and permute the rest of the string.
 Permuataion of an empty string is empty string
 Say our string is "ABCD"
 
 Permutations are
-
+```
 A + permute(BCD)
 
 B + permute(ACD)
@@ -21,20 +21,20 @@ B + permute(ACD)
 C + permute(ABD)
 
 D + permute(ABC) 
-
+```
 Similarly to permute(BCD)
-
+```
 B + permute(CD)
 
 C + permute(BD)
 
 D + permute(BC)
-
+```
 and so on.
 
 Following is the java code implementing the algorithm
 
-{% highlight java linenos %}
+{% highlight java %}
 	public static ArrayList<String> permute(String input) {
 		ArrayList<String> permutations = new ArrayList<>();
 		_permute(permutations, "", input);
