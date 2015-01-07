@@ -5,8 +5,7 @@ tags: Interview geeksforgeeks
 published: true
 ---
 
-I have started working on string manipulation problems from [geeksforgeeks.com](http://www.geeksforgeeks.org/category/c-strings/). 
-One of the things that amazed me is computing the [permutations of a string](http://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/).
+Today I have learnt computing the [permutations of a string](http://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/).
 Using recursion produces a succinct solution to this problem.
 The intution is that you pick a character from the string and permute the rest of the string.
 Permuataion of an empty string is empty string
