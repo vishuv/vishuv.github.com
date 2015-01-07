@@ -5,9 +5,8 @@ title: About
 
 
 
-I am Viswanadh Kumar Reddy Vuggumudi(Vish), a Graduate Teaching Assistant [University of Minnesota Duluth](http://d.umn.edu/cs/). 
+I am Viswanadh Kumar Reddy Vuggumudi(Vish). I am a Computer Science graduate student and Graduate Teaching Assistant at [University of Minnesota Duluth](http://d.umn.edu/cs/). 
 
-[My Resume]()
 
 Contact information:
 
