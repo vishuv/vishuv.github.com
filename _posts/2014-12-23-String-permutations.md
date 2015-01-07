@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Strings Part-1
+title: Strings Permutations
 tags: Interview geeksforgeeks
 published: true
 ---
